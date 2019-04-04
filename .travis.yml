@@ -7,13 +7,13 @@ r:
   - devel
   - oldrel
   - release
-    - env:
-      VDIFFR=true
+      
     
 env:
   global:
     # don't treat missing suggested packages as error
     - _R_CHECK_FORCE_SUGGESTS_=false
+    - VDIFFR=true
     # plotly_api_key (for posting to plot.ly)
     - secure: "WsvmMHN4YVhnk0bLRE04APcLbs5s4vWKSHjEdU0bPXd0xdMTzZeP5D7pxyF1983C+P5LpSnGHv4dgwLMBkNzxJwBR7/Ta7lfO1akYILWwxib+1DVbCqUH5Z4Ba1FSCQptIrLNGR3P7+0Lem4hEhqKdPKltFnxhnXO0Y+MeG71IQ="
     # MAPBOX_TOKEN (for testing `plot_mapbox()`)
